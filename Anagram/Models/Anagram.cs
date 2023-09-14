@@ -2,11 +2,11 @@ namespace AnagramNamespace.Models
   {
     public class Anagram
     {
-      // public int Side2 { get; set; }
+      public string Word { get; set; }
 
-      public Anagram()
+      public Anagram(string word)
       {
-        
+        Word = word;
       }
 
       // public float CalculateArea()
