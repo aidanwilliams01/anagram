@@ -40,5 +40,14 @@ namespace AnagramTestNamespace.Tests
       string result = newAnagram.CompareWords;
       Assert.AreEqual(compareWords, result);
     }
+
+    [TestMethod]
+    public void SetCompareWords_SetsValueOfCompareWords_Void()
+    {
+      Anagram newAnagram = new Anagram("beard", "bread, test");
+      string newCompareWords = "bear";
+      newAnagram.CompareWords = newCompareWords;
+      Assert.AreEqual(newCompareWords, newAnagram.CompareWords);
+    }
   }
 }
