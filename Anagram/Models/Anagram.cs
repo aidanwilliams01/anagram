@@ -1,19 +1,18 @@
-namespace ShapeTracker.Models
+namespace AnagramNamespace.Models
   {
-    public class Rectangle
+    public class Anagram
     {
-      public int Side2 { get; set; }
+      // public int Side2 { get; set; }
 
-      public Rectangle(int length1, int length2)
+      public Anagram()
       {
-        _side1 = length1;
-        Side2 = length2;
+        
       }
 
-      public float CalculateArea()
-      {
-        float area = _side1 * Side2;
-        return area;
-      }
+      // public float CalculateArea()
+      // {
+      //   float area = _side1 * Side2;
+      //   return area;
+      // }
     }
   }

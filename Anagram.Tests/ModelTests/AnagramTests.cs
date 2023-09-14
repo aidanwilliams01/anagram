@@ -1,17 +1,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ShapeTracker.Models;
+using AnagramNamespace.Models;
 
-namespace ShapeTracker.Tests
+namespace AnagramTestNamespace.Tests
 {
   [TestClass]
-  public class RectangleTests
+  public class AnagramTests
   {
 
     [TestMethod]
-    public void RectangleConstructor_CreatesInstanceOfRectangle_Rectangle()
+    public void AnagramConstructor_CreatesInstanceOfAnagram_Anagram()
     {
-      Rectangle newRectangle = new Rectangle(3, 2);
-      Assert.AreEqual(typeof(Rectangle), newRectangle.GetType());
+      Anagram newAnagram = new Anagram();
+      Assert.AreEqual(typeof(Anagram), newAnagram.GetType());
     }
   }
 }
