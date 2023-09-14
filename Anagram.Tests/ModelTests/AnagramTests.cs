@@ -22,5 +22,14 @@ namespace AnagramTestNamespace.Tests
       string result = newAnagram.Word;
       Assert.AreEqual(word, result);
     }
+
+    [TestMethod]
+    public void SetWord_SetsValueOfWord_Void()
+    {
+      Anagram newAnagram = new Anagram("beard");
+      string newWord = "bear";
+      newAnagram.Word = newWord;
+      Assert.AreEqual(newWord, newAnagram.Word);
+    }
   }
 }
