@@ -1,3 +1,5 @@
+// coin combos / pallindrome easier?
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AnagramNamespace.Models;
 
@@ -48,6 +50,14 @@ namespace AnagramTestNamespace.Tests
       string newCompareWords = "bear";
       newAnagram.CompareWords = newCompareWords;
       Assert.AreEqual(newCompareWords, newAnagram.CompareWords);
+    }
+
+    [TestMethod]
+    public void DetermineAnagram_ReturnsString_String()
+    {
+      Anagram newAnagram = new Anagram("beard", "bread, test");
+      string result = newAnagram.DetermineAnagram();
+      Assert.AreEqual("bread", result);
     }
   }
 }

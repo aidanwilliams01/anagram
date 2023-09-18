@@ -8,6 +8,9 @@ namespace ShapeTracker
   {
     static void Main()
     {
+      Anagram newAnagram = new Anagram("beard", "beard, bread, test");
+      string result = newAnagram.DetermineAnagram();
+      Console.WriteLine($"{result}");
       // Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       // Console.WriteLine("Welcome to the Shape Tracker app!");
       // Console.WriteLine("Type 'triangle' to check the type of a triangle, 'rectangle' to calculate the area of a rectangle, or any key to exit.");
