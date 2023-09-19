@@ -8,12 +8,8 @@ namespace AnagramNamespace
   {
     static void Main()
     {
-      // Anagram newAnagram = new Anagram("beard", "bread, test");
-      // string result = newAnagram.DetermineAnagram();
-      // Console.WriteLine($"{result}");
       Console.WriteLine("*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*");
       Console.WriteLine("Welcome to the Anagram app!");
-    
       Console.WriteLine("Enter a word:");
       string string1 = Console.ReadLine();  
       Console.WriteLine("Enter a list of word(s) separated by a space:");
@@ -27,6 +23,16 @@ namespace AnagramNamespace
       else
       {
         Console.WriteLine($"List of anagrams of {string1}: {result}");
+      }
+      Console.WriteLine("Do you want to run the program again? (yes to run again, any other input to exit)");
+      string string3 = Console.ReadLine();
+      if (string3.ToLower() == "yes")
+      {
+        Main();
+      }
+      else
+      {
+        Console.WriteLine("Goodbye");
       }
     }
   }
