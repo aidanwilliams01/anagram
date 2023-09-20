@@ -1,5 +1,3 @@
-// coin combos / pallindrome easier?
-
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AnagramNamespace.Models;
 

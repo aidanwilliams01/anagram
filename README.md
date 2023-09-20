@@ -1,6 +1,6 @@
 # Anagram
 
-#### 
+#### A word comparison application.
 
 #### By Aidan Williams
 
@@ -12,7 +12,7 @@
 
 ## Description
 
-
+A console application comparing a word to a set of one or more words and returning matching anagrams.
 
 ## Setup Instructions
 
